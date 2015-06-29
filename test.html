@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap-3.3.4.min.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+</head>
+<body>
+<div class="col-row">
+<div class="col-xs-2">
+	<input id="appId" name="appId" type="text"  class="form-control"  autocomplete="off"/>
+	</div>
+	</div>
+  <script >
+
+// 我们可以通过如下方式进行与后台进行交互
+	// data是对象列表，id是对象的一个属性
+	// $.ajax({
+	// 		cache : true,
+	// 		type : 'get',
+	// 		url : your url,
+	// 		dataType : 'JSON',
+	// 		async : true,
+	// 		success : function(data){
+	// 			if($('#appId')){
+	// 				$('#appId').typeahead({
+	// 					source:  data,
+	// 					display: 'id'
+	// 				});
+	// 			}			
+	// 		},
+	// 		error : function(jqXHR, textStatus, errorThrown){
+	// 			console.log(errorThrown);
+	// 		}
+	// 	});
+  </script>
+</body>
+
+</html>
